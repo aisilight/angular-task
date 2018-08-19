@@ -13,14 +13,14 @@ angular.module("myApp", [])
      $scope.tasksArray.push($scope.tempInput);  //добавляем в последний элемент массива временную переменную tempInput
      $scope.tempInput = "";  //освобождаем временную переменную
    } else {
-        console.log('В полк input пусто');
+        console.log('В поле input пусто');
     }
 }
 //создаем функцию для удаления заданий
 $scope.deleteItem = function(item){
     var index = $scope.tasksArray.indexOf(item);  //ищем в массиве item для удаления
     console.log(index);
-    $scope.tasksArray.splice(index, 1); 
+    $scope.tasksArray.splice(index, 1);  //удаляем найденное задание
 };
 
 });
