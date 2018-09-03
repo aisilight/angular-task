@@ -1,5 +1,5 @@
 angular.module("myApp", [])
-.controller("firstCtrl", function($scope){
+.controller("firstCtrl", function($scope){         //настройка контроллера
 
 
   //Создать временную переменную
